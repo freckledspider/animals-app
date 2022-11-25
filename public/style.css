@@ -18,14 +18,14 @@ h2, h2 a {
     font-family: 'Cormorant', serif;
     color: #535E4B;
     font-style: italic;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-decoration: none;
     border-bottom: 5px solid #C1C2AD;
     padding-top: 30px;
 }
 
 div {
-    width: 50%;
+    width: 40%;
     margin: auto;
     padding: 20px;
 }
@@ -52,8 +52,51 @@ li a {
     font-size: 1.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
+    transition-duration: 1s;
 }
 
 li a:hover {
     background-color: #64725b;
+}
+
+fieldset {
+    background-color: #dcdbd1;
+    padding: 20px;
+    border: none;
+    line-height: 3rem;
+}
+
+legend {
+    font-family: 'Cormorant', serif;
+    color: #483C32;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+button, .inputbutton {
+    background-color: #535E4B;
+    color: #EEEDE2;
+    font-family: 'Cormorant', serif;
+    font-size: 1.5rem;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    transition-duration: 1s;
+    float: left;
+}
+
+button:hover, .inputbutton:hover {
+    background-color: #64725b;
+    cursor: pointer;
+}
+
+.back {
+    float:right;
+}
+
+input {
+    background-color: #aaab99;
+    border: none;
+    color: #EEEDE2;
+    padding: 5px;
 }

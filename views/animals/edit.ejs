@@ -19,7 +19,7 @@
                         />
                     </label><br>
                     <label>
-                        <b>Extinct?:</b> <input type="checkbox" name="extinct" <%= animal.extinct ? "checked" : "" %> />
+                        <b>Extinct?</b> <input type="checkbox" name="extinct" <%= animal.extinct ? "checked" : "" %> />
                     </label><br>
                     <label>
                         <b>Location:</b> <input 
@@ -39,8 +39,11 @@
                     </label>
                 </fieldset>
                 <br>
-                <input type="submit" value="Update <%= animal.species %>" />
+                <input class="inputbutton" type="submit" value="Update" />
             </form> 
+            <a href="/animals/"> 
+                <button class="back">Back</button>
+            </a>
 
         </div>
 

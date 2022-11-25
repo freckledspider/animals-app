@@ -11,9 +11,9 @@
                     <article>
                             <h2>
                                 <h2><i><%= animal.species %></i></h2><br>
-                                Status: <%= animal.extinct ? "Extinct" : "Alive" %><br>
-                                Location: <%= animal.location %><br>
-                                Life Expectancy: <%= animal.lifeExpectancy %> Years<br><br>
+                                <b>Status:</b> <%= animal.extinct ? "Extinct" : "Alive" %><br>
+                                <b>Location:</b> <%= animal.location %><br>
+                                <b>Life Expectancy:</b> <%= animal.lifeExpectancy %> Years<br><br>
 
                             <a href="/animals/<%= animal._id %>/edit">
                                <button>Edit</button>

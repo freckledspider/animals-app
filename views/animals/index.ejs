@@ -11,13 +11,10 @@
     <a href="/animals/new"><button>Add a new animal</button></a>
     <% for(animal of animals) { %>
     <article>
-        <a href="/animals/<%= animal._id %>">
-            <h2>
-                <%= animal.name %><br>
-                <%= animal.extinct ? "Alive" : "Extinct" %><br>
-                <%= animal.location %>
-                <%= animal.lifeExpectancy %>
-            </h2>
+    <h2><a href="/animals/<%= animal._id %>"><i><%= animal.species %></i></a></h2><br>
+                Status: <%= animal.extinct ? "Extinct" : "Alive" %><br>
+                Location: <%= animal.location %><br>
+                Life Expectancy: <%= animal.lifeExpectancy %> Years
         </a>
     </article>
     <% } %>

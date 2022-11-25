@@ -3,7 +3,7 @@
 //---------------------------------
 
 require("dotenv").config()
-const mongoose = require("mongoose")
+const mongoose = require('mongoose')
 
 const DATABASE_URL = process.env.DATABASE_URL
 const CONFIG = {
@@ -11,14 +11,11 @@ const CONFIG = {
     useUnifiedTopology: true
 }
 
-
 mongoose.connect(DATABASE_URL, CONFIG)
 
-mongoose.connection 
-    .on("open", () => console.log("Mongoose connected"))
-    .on("close", () => console.log("Disconnected from mongoose"))
-    .on("error", () => console.log("Mongoose error", error))
+mongoose.connection
+    .on("open", ()=> console.log('Mongoose connected'))
+    .on("close", ()=> console.log('Disconnected from Mongoose'))
+    .on("error", (error)=> console.log('Mongoose error', error))
 
-
-    
 module.exports = mongoose
